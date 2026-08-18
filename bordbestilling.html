@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kontakt oss – Restaurant Salt i Høysand</title>
-<meta name="description" content="Ta kontakt med Restaurant Salt i Høysand: 952 40 399, info@restaurantsalt.no. Nancy Johannessens vei 5, 1747 Skjeberg.">
+<title>Bordbestilling – Restaurant Salt i Høysand</title>
+<meta name="description" content="Reserver bord hos Restaurant Salt i Høysand — velg antall gjester, dato og klokkeslett, og få bekreftelse på mail med en gang.">
 <meta name="theme-color" content="#226300">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
@@ -27,15 +27,15 @@
     <nav class="main-nav" aria-label="Hovedmeny">
       <a href="apningstider.html">Åpningstider</a>
       <a href="meny.html">Meny</a>
-      <a href="bordbestilling.html">Bordbestilling</a>
+      <a href="bordbestilling.html" class="active" aria-current="page">Bordbestilling</a>
       <a href="bryllup.html">Bryllup</a>
       <a href="selskapslokaler.html">Selskapslokaler</a>
-      <a href="kontakt.html" class="active" aria-current="page">Kontakt oss</a>
+      <a href="kontakt.html">Kontakt oss</a>
     </nav>
 
     <div class="header-actions">
       <a href="tel:+4795240399" class="header-phone">952 40 399</a>
-      <a href="bordbestilling.html" class="btn btn-cta nav-cta">Bestill bord</a>
+      <a href="#reserver" class="btn btn-cta nav-cta">Bestill bord</a>
       <button class="hamburger" id="hamburgerBtn" aria-label="Åpne meny" aria-expanded="false" aria-controls="mobileMenu">
         <span></span><span></span><span></span>
       </button>
@@ -48,16 +48,16 @@
   <nav class="mobile-nav" aria-label="Mobilmeny">
     <a href="apningstider.html">Åpningstider</a>
     <a href="meny.html">Meny</a>
-    <a href="bordbestilling.html">Bordbestilling</a>
+    <a href="bordbestilling.html" class="active" aria-current="page">Bordbestilling</a>
     <a href="bryllup.html">Bryllup</a>
     <a href="selskapslokaler.html">Selskapslokaler</a>
-    <a href="kontakt.html" class="active" aria-current="page">Kontakt oss</a>
+    <a href="kontakt.html">Kontakt oss</a>
   </nav>
   <div class="mobile-menu-contact">
     <a href="tel:+4795240399">952 40 399</a>
     <a href="mailto:info@restaurantsalt.no">info@restaurantsalt.no</a>
   </div>
-  <a href="bordbestilling.html" class="btn btn-cta mobile-menu-cta">Bestill bord</a>
+  <a href="#reserver" class="btn btn-cta mobile-menu-cta">Bestill bord</a>
 </div>
 <div class="mobile-menu-scrim" id="mobileMenuScrim"></div>
 
@@ -65,41 +65,24 @@
 
   <section class="page-header">
     <div class="container reveal">
-      <p class="section-eyebrow">Ta kontakt</p>
-      <h1>Vi vil gjerne høre fra deg</h1>
-      <p class="section-lede">Har du spørsmål om bordreservasjon, selskapslokaler, bryllup eller arrangementer? Ta kontakt, så finner vi ut av det sammen.</p>
+      <p class="section-eyebrow">Bestill hele døgnet</p>
+      <h1>Bordbestilling</h1>
+      <p class="section-lede">Reserver bord på forhånd — velg antall gjester, dato og klokkeslett under, og få bekreftelse på mail med en gang.</p>
     </div>
   </section>
 
-  <section class="kontakt" id="kontakt-info">
-    <div class="container kontakt-grid">
-      <div class="kontakt-intro reveal">
-        <p class="section-eyebrow">Bordreservasjon</p>
-        <h2>Reserver bord på nett</h2>
-        <p>Reserver bord på Restaurant Salt i Høysand og nyt en utsøkt matopplevelse i en idyllisk setting med utsikt over fjorden.</p>
-        <a href="bordbestilling.html" class="btn btn-cta">Bestill bord</a>
-      </div>
+  <section id="reserver">
+    <div class="container">
+      <ol class="booking-steps reveal">
+        <li>Velg antall gjester</li>
+        <li>Velg dato</li>
+        <li>Velg klokkeslett</li>
+      </ol>
 
-      <div class="kontakt-cards reveal">
-        <div class="kontakt-card">
-          <h3>Åpningstider</h3>
-          <div class="kv"><span>Onsdag–lørdag</span><span>17.00–22.00</span></div>
-          <div class="kv"><span>Søndag</span><span>15.00–20.00</span></div>
-          <a href="apningstider.html" class="text-link">Se full oversikt →</a>
-        </div>
-        <div class="kontakt-card">
-          <h3>Adresse</h3>
-          <p>Nancy Johannessens vei 5,<br>1747 Skjeberg</p>
-          <a href="https://goo.gl/maps/4yi5BBYQsVxAP7Ug9" class="text-link" target="_blank" rel="noopener">Åpne kart →</a>
-        </div>
-        <div class="kontakt-card">
-          <h3>Kontakt</h3>
-          <p><a href="tel:+4795240399">952 40 399</a><br><a href="mailto:info@restaurantsalt.no">info@restaurantsalt.no</a></p>
-          <div class="social-row">
-            <a href="https://www.facebook.com/restaurantsalt.no/" target="_blank" rel="noopener">Facebook</a>
-            <a href="https://no.tripadvisor.com/Restaurant_Review-g2419467-d6873783-Reviews-Restaurant_Salt-Sarpsborg_Municipality_Ostfold_Eastern_Norway.html" target="_blank" rel="noopener">Tripadvisor</a>
-          </div>
-        </div>
+      <p class="booking-note reveal">For grupper på over 8 personer, ta kontakt på tlf. <a href="tel:+4795240399">952 40 399</a> eller <a href="mailto:info@restaurantsalt.no">info@restaurantsalt.no</a>. Det er begrenset antall bord for online bestilling — ta gjerne kontakt hvis det er fullt eller du lurer på noe.</p>
+
+      <div class="booking-embed reveal">
+        <iframe src="https://booking.gastroplanner.no/restaurantsalt/t" title="Bordbestilling hos Restaurant Salt i Høysand"></iframe>
       </div>
     </div>
   </section>
@@ -109,11 +92,11 @@
       <div class="cta-band-copy">
         <p class="section-eyebrow">Selskap og arrangement</p>
         <h2>Planlegger du noe større?</h2>
-        <p>Se lokalene våre til bryllup, konferanse, konfirmasjon og andre selskap.</p>
+        <p>For grupper, selskap og bryllup — ta direkte kontakt i stedet for online bestilling.</p>
       </div>
       <div class="cta-band-actions">
         <a href="selskapslokaler.html" class="btn btn-cta">Selskapslokaler</a>
-        <a href="bryllup.html" class="btn btn-outline-dark">Bryllup</a>
+        <a href="kontakt.html" class="btn btn-outline-dark">Kontakt oss</a>
       </div>
     </div>
   </section>
