@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bryllup – Restaurant Salt i Høysand</title>
+<meta name="description" content="Feir bryllupet med utsikt over fjorden på Restaurant Salt i Høysand. Plass til opptil 100 gjester, moderne og elegant stil, og en dedikert bryllupsmeny.">
+<meta name="theme-color" content="#226300">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Hopp til innhold</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html" class="logo-plate" aria-label="Restaurant Salt i Høysand – til forsiden">
+      <img src="assets/logo.svg" alt="Restaurant Salt i Høysand" width="180" height="65">
+    </a>
+
+    <nav class="main-nav" aria-label="Hovedmeny">
+      <a href="apningstider.html">Åpningstider</a>
+      <a href="meny.html">Meny</a>
+      <a href="https://restaurantsalt.no/bordbestilling/" target="_blank" rel="noopener">Bordbestilling</a>
+      <a href="bryllup.html" class="active" aria-current="page">Bryllup</a>
+      <a href="selskapslokaler.html">Selskapslokaler</a>
+      <a href="kontakt.html">Kontakt oss</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="tel:+4795240399" class="header-phone">952 40 399</a>
+      <a href="https://restaurantsalt.no/bordbestilling/" class="btn btn-cta nav-cta" target="_blank" rel="noopener">Bestill bord</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Åpne meny" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Lukk meny">&times;</button>
+  <nav class="mobile-nav" aria-label="Mobilmeny">
+    <a href="apningstider.html">Åpningstider</a>
+    <a href="meny.html">Meny</a>
+    <a href="https://restaurantsalt.no/bordbestilling/" target="_blank" rel="noopener">Bordbestilling</a>
+    <a href="bryllup.html" class="active" aria-current="page">Bryllup</a>
+    <a href="selskapslokaler.html">Selskapslokaler</a>
+    <a href="kontakt.html">Kontakt oss</a>
+  </nav>
+  <div class="mobile-menu-contact">
+    <a href="tel:+4795240399">952 40 399</a>
+    <a href="mailto:info@restaurantsalt.no">info@restaurantsalt.no</a>
+  </div>
+  <a href="https://restaurantsalt.no/bordbestilling/" class="btn btn-cta mobile-menu-cta" target="_blank" rel="noopener">Bestill bord</a>
+</div>
+<div class="mobile-menu-scrim" id="mobileMenuScrim"></div>
+
+<main id="main">
+
+  <section class="hero hero-compact" id="top">
+    <div class="hero-media">
+      <img src="assets/bryllup.jpg" alt="Nygift brudepar i vakre naturomgivelser ved Restaurant Salt" width="1400" height="933">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="eyebrow">Den store dagen</p>
+      <h1>Bryllup med utsikt over fjorden</h1>
+      <p class="hero-lede">En intim atmosfære og staselige naturomgivelser gjør Restaurant Salt til et minnerikt sted å feire bryllupet.</p>
+    </div>
+  </section>
+
+  <section class="historie" id="om-bryllup">
+    <div class="container historie-grid">
+      <img class="historie-photo reveal" src="assets/bryllup-selskap.jpg" alt="Dekket bord i selskapssalen på Restaurant Salt, klar for bryllupsfeiring" width="1400" height="1050" loading="lazy">
+      <div class="historie-text reveal">
+        <p class="section-eyebrow">Deres dag, vår omsorg</p>
+        <h2>Moderne og elegant, med plass til de dere er glad i</h2>
+        <p>Restaurant Salt holder til i en bygning fra 1897 ved Skjebergkilen, med utsikt over fjorden og en intim atmosfære som gjør stedet til et staselig valg for bryllupet.</p>
+        <p>Lokalene har en moderne og elegant stil, og kan tilpasses deres bryllup — fra intime samlinger til opptil 100 gjester.</p>
+        <p>Til dagen tilbyr vi en dedikert bryllupsmeny, laget på lokale og sesongbaserte råvarer.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro" id="fasiliteter">
+    <div class="container intro-grid reveal">
+      <p class="section-eyebrow">Fasiliteter</p>
+      <h2>Alt på ett sted</h2>
+      <div class="stat-row">
+        <div class="stat">
+          <span class="stat-num">100</span>
+          <span class="stat-label">Gjester i selskapslokalene</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">1897</span>
+          <span class="stat-label">Historisk bygning ved fjorden</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">Egen</span>
+          <span class="stat-label">Dedikert bryllupsmeny</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container cta-band-inner">
+      <div class="cta-band-copy">
+        <p class="section-eyebrow">Ta kontakt</p>
+        <h2>La oss planlegge bryllupet sammen</h2>
+        <p>Ta kontakt for pris, tilgjengelighet og en uforpliktende prat om dagen deres.</p>
+      </div>
+      <div class="cta-band-actions">
+        <a href="mailto:info@restaurantsalt.no" class="btn btn-cta">Send e-post</a>
+        <a href="kontakt.html" class="btn btn-outline-dark">Kontaktinfo</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <a href="index.html" class="footer-logo">
+      <img src="assets/logo.svg" alt="Restaurant Salt i Høysand" width="150" height="54">
+    </a>
+    <nav class="footer-nav" aria-label="Bunntekstmeny">
+      <a href="apningstider.html">Åpningstider</a>
+      <a href="meny.html">Meny</a>
+      <a href="bryllup.html">Bryllup</a>
+      <a href="selskapslokaler.html">Selskapslokaler</a>
+      <a href="kontakt.html">Kontakt oss</a>
+    </nav>
+    <div class="footer-contact">
+      <p>Nancy Johannessens vei 5, 1747 Skjeberg</p>
+      <p><a href="tel:+4795240399">952 40 399</a> · <a href="mailto:info@restaurantsalt.no">info@restaurantsalt.no</a></p>
+      <div class="social-row">
+        <a href="https://www.facebook.com/restaurantsalt.no/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://givn.no/shop/salt" target="_blank" rel="noopener">Gavekort</a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; <span id="year"></span> Restaurant Salt i Høysand</p>
+    <p>Nettside levert av <a href="https://dmarketing.no" target="_blank" rel="noopener">Dietrichs Marketing</a></p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

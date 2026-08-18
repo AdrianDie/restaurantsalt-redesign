@@ -49,4 +49,13 @@
 
   var yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  var seasonBanner = document.getElementById('seasonBanner');
+  if (seasonBanner) {
+    var now = new Date();
+    var month = now.getMonth() + 1;
+    var day = now.getDate();
+    var inSeason = (month === 4 && day >= 20) || (month === 5 && day <= 20);
+    if (inSeason) seasonBanner.hidden = false;
+  }
 })();

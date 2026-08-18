@@ -177,6 +177,9 @@ section { padding: 96px 0; scroll-margin-top: calc(var(--header-h) + 16px); }
   transition: color .3s ease, opacity .2s ease;
 }
 .main-nav a:hover { opacity: .8; }
+.main-nav a.active { border-bottom: 1.5px solid rgba(255,255,255,.85); }
+.site-header.scrolled .main-nav a.active { border-bottom-color: var(--green); }
+.mobile-nav a.active { color: var(--green); }
 
 .header-actions { display: flex; align-items: center; gap: 20px; }
 .header-phone {
@@ -586,4 +589,100 @@ section { padding: 96px 0; scroll-margin-top: calc(var(--header-h) + 16px); }
 
 @media (min-width: 981px) {
   .mobile-menu, .mobile-menu-scrim, .hamburger { display: none !important; }
+}
+
+/* ============================================================
+   INTERIOR PAGES — compact photo hero, text-only page header,
+   CTA band, season banner, menu allergens, rooms, split blocks
+   ============================================================ */
+
+/* Compact hero for interior photo pages (meny/bryllup/selskapslokaler/17-mai) */
+.hero.hero-compact { min-height: 58vh; }
+.hero-compact .hero-content { padding-bottom: 56px; }
+.hero-compact .hero-lede { margin-bottom: 0; }
+
+/* Text-only page header for utility pages (apningstider/kontakt) */
+.page-header { background: var(--green-tint); padding: calc(var(--header-h) + 72px) 0 56px; }
+.page-header .container { max-width: 720px; }
+.page-header h1 { font-size: clamp(30px, 4.6vw, 46px); margin-bottom: .4em; }
+.page-header .section-lede { margin-bottom: 0; }
+
+[hidden] { display: none !important; }
+
+/* Seasonal banner (17. mai) — homepage only, shown via app.js date check */
+.season-banner { background: var(--green); }
+.season-banner-inner {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  gap: 6px 22px; padding: 14px 24px; text-align: center;
+}
+.season-banner-inner p { margin: 0; font-size: 14.5px; color: var(--white); }
+.season-banner-inner .text-link { color: var(--white); }
+.season-banner-inner .text-link:hover { border-color: var(--white); }
+
+/* Menu allergen line */
+.menu-item .allergens { margin: 3px 0 0; font-size: 12.5px; color: var(--text-soft); opacity: .8; }
+.menu-item-note { font-weight: 400; color: var(--text-soft); font-family: var(--font-body); font-size: 13px; }
+.menu-group-note { font-size: 14px; color: var(--text-soft); margin: -8px 0 18px; }
+.menu-subgroup-label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--text-soft); margin: 18px 0 10px; }
+.menu-subgroup-label:first-child { margin-top: 0; }
+
+/* Seasonal note under a page hero */
+.hero-note { display: inline-block; margin-top: 18px; font-size: 14px; font-weight: 600; color: var(--white); background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.4); border-radius: 999px; padding: 8px 18px; }
+
+/* Full menu page — single centered column (no sticky photo) */
+.menu-page-groups { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px; }
+
+/* Spacing helpers scoped to their known contexts */
+.hours-card + .hero-actions { margin-top: 28px; }
+.kontakt-card .text-link { margin-top: 6px; }
+
+/* Split block — alternating image/text (reused across selskapslokaler subsections) */
+.split-block { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+.split-block.reverse .split-block-photo { order: 2; }
+.split-block-photo { border-radius: 18px; width: 100%; object-fit: cover; aspect-ratio: 4/3; }
+.split-block-text h2 { font-size: clamp(24px, 3vw, 32px); }
+.split-block-text p { font-size: 16px; }
+.split-block + .split-block { margin-top: 88px; }
+
+/* Conference rooms */
+.rooms-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 36px; }
+.room-card { background: var(--white); border-radius: 16px; padding: 26px; box-shadow: 0 10px 30px rgba(20,20,18,.06); }
+.room-card h4 { font-family: var(--font-display); font-size: 19px; color: var(--ink); margin-bottom: 6px; }
+.room-card .room-cap { font-size: 14px; font-weight: 600; color: var(--green); white-space: nowrap; }
+.room-card p:last-child { font-size: 14px; color: var(--text-soft); margin: 8px 0 0; }
+
+/* CTA band — reusable bottom CTA on interior pages */
+.cta-band { background: var(--green-tint); }
+.cta-band-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px; }
+.cta-band-inner > .cta-band-copy { max-width: 520px; }
+.cta-band-inner h2 { font-size: clamp(24px, 3vw, 32px); margin-bottom: .3em; }
+.cta-band-inner .cta-band-copy p:last-child { margin-bottom: 0; color: var(--text-soft); }
+.cta-band-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+.btn-outline-dark { background: transparent; color: var(--ink); border-color: var(--ink); }
+.btn-outline-dark:hover { background: var(--ink); color: var(--white); border-color: var(--ink); }
+
+/* Quiet centered text block (minnestund) */
+.quiet-block { background: var(--cream); text-align: center; }
+.quiet-block .container { max-width: 640px; }
+.quiet-block h2 { font-size: clamp(24px, 3vw, 32px); }
+.quiet-block p:last-of-type { margin-bottom: 0; }
+
+/* Opening hours (apningstider.html) */
+.hours-card { background: var(--white); border-radius: 18px; padding: 34px; box-shadow: 0 10px 30px rgba(20,20,18,.06); max-width: 420px; }
+.hours-card .kv { font-size: 17px; padding: 10px 0; }
+
+@media (max-width: 980px) {
+  .split-block { grid-template-columns: 1fr; gap: 28px; }
+  .split-block.reverse .split-block-photo { order: -1; }
+  .rooms-grid { grid-template-columns: 1fr; }
+  .cta-band-inner { flex-direction: column; align-items: flex-start; }
+}
+
+@media (max-width: 640px) {
+  .hero.hero-compact { min-height: 48vh; }
+  .page-header { padding: calc(var(--header-h) + 40px) 0 40px; }
+  .split-block + .split-block { margin-top: 56px; }
+  .cta-band-actions { width: 100%; }
+  .cta-band-actions .btn { width: 100%; }
+  .season-banner-inner { padding: 12px 18px; }
 }
