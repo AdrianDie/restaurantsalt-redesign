@@ -61,6 +61,17 @@
 })();
 
 (function () {
+  // På kundens permanente domene tar ekte CookieYes over automatisk — se OVERLEVERING.md
+  var LIVE_DOMAINS = ['restaurantsalt.no', 'www.restaurantsalt.no'];
+  if (LIVE_DOMAINS.indexOf(window.location.hostname) !== -1) {
+    var cy = document.createElement('script');
+    cy.id = 'cookieyes';
+    cy.type = 'text/javascript';
+    cy.src = 'https://cdn-cookieyes.com/client_data/be42a8939d464c9b37041d88/script.js';
+    document.head.appendChild(cy);
+    return;
+  }
+
   var STORAGE_KEY = 'saltCookieConsent';
 
   var CATEGORIES = [
